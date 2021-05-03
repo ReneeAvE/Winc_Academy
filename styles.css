@@ -1,0 +1,41 @@
+html{
+    background-color:olive;
+}
+
+header, footer{
+    color:rgb(39, 39, 0);
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+h2{
+    color:darkolivegreen;
+    font-family:fantasy;
+    font-size:larger;
+}
+
+p,ul{
+    color:rgb(39, 39, 0);
+    font-family:cursive;
+    font-size:16px;
+}
+
+img.photo {
+	border: 1px solid #999;
+	background-color: #fcfcfc;
+	padding: 4px; 
+}
+
+.links{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.border{
+    border: 5px solid rgb(39, 39, 0);
+    background-color:rgb(185, 185, 129);
+    padding: 25px;
+}
+.dotted-border{
+    border: 5px dotted rgb(39, 39, 0);
+    background-color:rgb(185, 185, 129);
+    padding: 35px;
+}
