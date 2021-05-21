@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Dien je verzoek in </title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com"> 
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Grandstander&display=swap">
+        <script src="https://kit.fontawesome.com/66c957289e.js" crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+    <body>
+        <header>
+            <h1>VERZOEKJE?</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">Over Timmy</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a class="active" href="verzoek.html">Verzoekje?</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <hr>
+
+        <main class="form">
+            <h3>Dien hier je verzoek voor een volgende review in!</h3>
+            <p>Als jij wat over jezelf vertelt, mag jij een verzoek indienen wat ik de volgende keer zal reviewen. Vul onderstaand formulier in!</p>
+                <form name="verzoek" method="POST" data-netlify="true">
+                    <p>
+                      <label>Naam: <input type="text" name="name" /></label>   
+                    </p>
+                    <p>
+                      <label>Emailadres: <input type="email" name="email" /></label>
+                    </p>
+                    <p>
+                        <label>Leeftijd: <input type="number" name="age" /></label>
+                    </p>
+                    <p>
+                        <label>Geboortedatum: <input type="date" name="date" /></label>
+                    </p>
+                    <p>
+                        <label class="different">Geslacht: <br>
+                            <input type="radio" name="gender" value="male"/>Man<br>
+                            <input type="radio" name="gender" value="female"/>Vrouw<br>
+                            <input type="radio" name="gender" value="other"/>Anders<br>
+                        </label>
+                    </p>      
+                    <p>
+                        <label class="different">Favoriete hondenras:<br>
+                            <input type="checkbox" name="hond1" value="Jack Russell"/><label for="hond1">Jack Russell Terriër</label><br>
+                            <input type="checkbox" name="hond2" value="Jack Russell"/>Jack Russell Terriër<br>
+                            <input type="checkbox" name="hond3" value="Jack Russell"/>Jack Russell Terriër<br>
+                            <input type="checkbox" name="hond4" value="Jack Russell"/>Jack Russell Terriër<br>
+                        </label>
+                    </p>
+                    <p>
+                        <label for="wandelen">Leukste plek om te wandelen:</label>
+                        <select id="wandelen" name="wandeling">
+                        <option value="bos">Bos</option>
+                        <option value="strand">Strand</option>
+                        <option value="park">Park</option>
+                        <option value="stad">Stad</option>
+                        <option value="weiland">Weiland</option>
+                        </select>
+                    </p>
+                    <p> 
+                        <label>Wat zal ik voor je reviewen?: <textarea name="message"></textarea></label>
+                    </p> 
+                    <p>
+                        <label for="myfile">Upload een foto:</label>
+                        <input type="file" name="myfile">
+                    </p>
+                   <p>
+                        <label for="homepage">Link naar jouw website:</label>
+                        <input type="url" name="homepage">
+                   </p>
+                    <button type="reset">Reset</button>
+                    <button type="submit">Verzend</button>
+                  </form>
+        </main>
+
+    <hr>
+
+    <footer>
+        <ul>
+            <a class="insta" href="https://www.instagram.com/dogtimmythe" target="_blank"><i class="fab fa-instagram"></i></a>
+            <li>Copyright © 2021</li>
+            <li>Timmy Zomer</li>
+            <li>ZieligZwaarLeven B.V.</li>
+        </ul> 
+</footer>
+
+    </body>
+
+</html>

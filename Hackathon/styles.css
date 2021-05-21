@@ -1,0 +1,214 @@
+/*General*/
+
+*{
+    font-family:'Grandstander', cursive;
+    margin:0;
+}
+
+header {
+    background-image:url("Timmy-smal.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    width: auto;
+}
+
+h1{
+   text-align:center;
+   color:white;
+   padding: 60px;
+}
+
+h2, h3, p{
+    margin: 10px;
+}
+
+hr{
+    border-color:#703c14;
+    border-width:3px;
+    border-style:solid;
+}
+footer {
+    background-color: #c78e62;
+    padding:40px;
+    color:#fff;
+    width:auto;
+    height:auto;
+}
+div.footer-1{
+    display:inline;
+}
+div.footer-2{
+    display:inline;
+}
+
+/* Media */
+
+.fa-paw{
+    margin: 0px 0px 0px 10px;
+}
+
+hr.botje{
+    margin-top:20px;
+    background-image:url(botje.png);
+    background-repeat:no-repeat;
+    background-size:80px;
+    background-position: center;
+    border:none;
+    height:90px;
+    width:auto;
+}
+
+img.review {
+    margin:10px;
+    width: 150px;
+    height: auto;
+    border-radius:20px;
+    border: 3px dashed #c78e62;
+}
+
+img.photo{
+    border: 10px inset #c78e62;
+    display:block;
+    margin:20px auto;
+}
+
+.video{
+    position:relative;
+    padding-bottom:56.25%;
+    padding-top:30px;
+    height:0;
+    overflow:hidden;
+}
+.video iframe, .video object, .video embed {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
+
+/* Navigation */
+
+ul {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    background-color: #c78e62;
+    position:static;
+}
+
+li a{
+    display:block;
+    height: 40px;
+    color:#fff;
+    text-align:center;
+    line-height: 40px;
+    text-decoration:none;
+}
+
+li a:hover{
+    background-color: #703c14;
+    color:#fff;
+}
+
+li a.active{
+    background-color: #cbb5a6;
+    color:#fff;
+}
+.fa-instagram {
+    font-size: 50px;
+    color:#fff;
+    display: block;
+    float:right;
+}
+
+.fa-instagram:hover {
+    opacity: 0.7;
+}
+li a.insta{
+    display:list-item;
+    float:right;
+}
+.black{
+    color:#c78e62;
+    text-decoration:none;
+}
+
+/* Forms en buttons */
+
+input [type=text]{
+    width:100%;
+    padding: 6px 10px;
+    margin: 2px 0;
+    box-sizing:border-box;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 6px 10px;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+    resize: none;
+}
+button{
+    background-color:#c78e62;
+    border:none;
+    color:#fff;
+    padding: 6px 10px;
+    margin: 10px;
+    cursor:pointer;
+}
+button a, :visited{
+    color:#fff;
+    text-decoration:none;
+}
+
+input, textarea{
+    width:100%;
+    padding: 5px 10px;
+    margin: 5px 0;
+    box-sizing:border-box;
+    border:2px solid #c78e62;
+    border-radius:5px;
+}
+
+label.different input{
+    width:20%;
+    padding: 0px 0px;
+    margin: 0px 0;
+    text-align: left;
+    box-sizing:content-box;
+    border:none;
+}
+/* Mediaqueries */
+
+@media screen and (min-width: 960px) {
+ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #c78e62;
+}
+      
+li {
+        float: left;
+}
+      
+li a {
+        display: block;
+        color: #fff;
+        text-align: center;
+        padding: 0px 16px;
+        text-decoration: none;
+}
+      
+li a:hover {
+        background-color: #703c14;
+}
+footer li{
+    float:none;
+}
+}
