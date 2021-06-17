@@ -1,34 +1,23 @@
-alert("Welkom! Wat is je naam?");
+// const button = document.getElementById("mybutton");
 
-const ingevuldeNaam = prompt("vul hier je naam in");
+// button.addEventListener("click", function(){alert("button clicked")});
 
-alert("Hey " + ingevuldeNaam);
 
-const min = 1;
-const max = 25;
+// const changeBody = document.querySelector(".blue-background");
+// const button2 = document.querySelector(".change-background");
 
-let randomNumber = function getRandomNumber(min, max) {
-  return Math.floor(Math.random() * (max - min + 1)) + min;
-};
+// const changeBackground = () => {
+//     changeBody.classList.add("red-background");
+//     changeBody.classList.remove("blue-background");
+// }
 
-const winningNumber = randomNumber(min, max);
-console.log(winningNumber);
+// button2.addEventListener("click", changeBackground);
 
-let chosenNumber = prompt("Voer een nummer in van 1 tot 25 om te beginnen met raden...");
+const changeBody = document.querySelector(".blue-background");
+const button2 = document.querySelector(".change-background");
 
-let checkNumber = function(chosenNumber, winningNumber) {
-  if (chosenNumber != winningNumber) {
-      alert("Dat is niet correct. Probeer het nog eens.")
-      let chosenNumber = prompt("Voer nogmaals een nummer in tussen 1 en 25.");
-      checkNumber(chosenNumber, winningNumber);
-  }
-  else {
-      alert("Gefeliciteerd, je hebt gewonnen!")
-      alert("Dag " + ingevuldeNaam + ". Tot de volgende keer!")
-  }
+const toggleBackground = () => {
+    changeBody.classList.toggle("red-background");
 }
 
-checkNumber(chosenNumber, winningNumber);
-
-
-
+button2.addEventListener("click", toggleBackground);
