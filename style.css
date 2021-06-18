@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #F1F1F1;
+}
+
+.text {
+    color: black;
+    font-size: 3rem;
+}
+
+.btn-toggle-nav {
+    width: 60px;
+    height: 60px;
+    background-image: url("menu.png");
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+    cursor: pointer;
+}
+.btn-toggle-nav:hover {
+    opacity: 0.5;
+}
+
+.nav-sidebar {
+    width: 400px;
+}
+
+nav ul {
+    visibility: hidden;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    display: block;
+    height: 20px;
+    padding: 0 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #111;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.home {
+    background-color: #F1F1F1;
+}
+
+.geel {
+    background-color: yellow;
+}
+
+.blauw {
+    background-color: blue;
+}
+
+.rood {
+    background-color: red;
+}
+
+.groen {
+    background-color: green;
+}
